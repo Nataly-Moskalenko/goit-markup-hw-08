@@ -1,0 +1,41 @@
+.social {
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__link {
+        @include centeredFlex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+
+        @include transitioned(background-color);
+
+        &--white {
+            background-color: $icon-footer-color;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+        }
+
+        &:hover .social__icon,
+        &:focus .social__icon {
+            fill: $white-color;
+        }
+    }
+
+    &__icon {
+        &--gray {
+            @include transitioned(fill);
+            fill: $icon-color;
+        }
+
+        &--white {
+            fill: $white-color;
+        }
+    }
+}

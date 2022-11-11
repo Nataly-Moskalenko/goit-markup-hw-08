@@ -1,0 +1,34 @@
+.address {
+    margin-top: 20px;
+
+    &__map,
+    &__contact {
+        @include transitioned(color);
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    &__map {
+        color: $white-color;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    &__contact {
+        color: $text-light-color;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}

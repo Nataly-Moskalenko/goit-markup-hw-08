@@ -1,0 +1,54 @@
+.header {
+    border-bottom: 1px solid $header-border-color;
+    background-color: $white-color;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+
+    &__item:not(:first-child) {
+        margin-left: 30px;
+    }
+
+    &__link {
+        display: inline-flex;
+        vertical-align: middle;
+
+        @include transitioned(color);
+
+        color: $text-dark-color;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+
+        &:hover .header-list__envelope,
+        &:focus .header-list__envelope,
+        &:hover .header-list__smartphone,
+        &:focus .header-list__smartphone {
+            fill: $accent-color;
+        }
+    }
+
+    &__envelope,
+    &__smartphone {
+        @include transitioned(fill);
+
+        margin-right: 10px;
+        fill: $text-dark-color;
+    }
+}
