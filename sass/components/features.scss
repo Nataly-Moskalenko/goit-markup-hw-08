@@ -1,9 +1,10 @@
 .features {
-    &__list {
-        display: flex;
-    }
+    /* &__list {
+        display: flex;       
+    } */
 
     &__title {
+        text-align: center;
         margin-bottom: 10px;
 
         font-weight: 700;
@@ -30,13 +31,18 @@
 
         margin-bottom: 30px;
         border-radius: 4%;
-        width: 270px;
+        /* width: 270px; */
+        width: 100%;
         height: 120px;
 
         background-color: $background-color-gray;
     }
 
     &__item:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
+
+    /* &__item:not(:last-child) {
+        margin-right: 30px;
+    } */
 }

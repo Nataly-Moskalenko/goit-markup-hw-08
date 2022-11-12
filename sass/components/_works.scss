@@ -1,4 +1,9 @@
 .works {
+
+    &--hidden {
+        @extend %visually-hidden;
+    }
+
     &__title {
         margin-bottom: 50px;
         text-align: center;

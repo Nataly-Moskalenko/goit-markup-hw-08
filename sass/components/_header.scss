@@ -5,14 +5,31 @@
     &__container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding-top: 24px;
         padding-bottom: 24px;
+    }
+
+    &__button {
+        @include centeredFlex;
+        border: none;
+
+        width: 40px;
+        height: 40px;
+
+        color: $black-color;
+        background-color: $white-color;
     }
 }
 
 .header-list {
+    margin-left: auto;
     display: flex;
     align-items: center;
+
+    &--hidden {
+        @extend %visually-hidden;
+    }
 
     &__item:not(:first-child) {
         margin-left: 30px;

@@ -1,11 +1,11 @@
 .hero {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+
+    padding-top: 118px;
+    padding-bottom: 118px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+
+    width: 100%px;
 
     background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
         url("../images/hero.jpg");
@@ -13,17 +13,27 @@
     background-repeat: no-repeat;
     background-color: $hero-background-color;
 
+    /* padding-top: 200px;
+    padding-bottom: 200px;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto; */
+
     &__title {
-        max-width: 696px;
+        width: 360px;
         margin: 0 auto 30px;
 
         color: $white-color;
 
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.62;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+
+        /* max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36; */
     }
 
     &__button {

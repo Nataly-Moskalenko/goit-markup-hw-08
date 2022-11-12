@@ -44,18 +44,14 @@ p {
     margin: 0;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    /* padding-top: 94px;
+    padding-bottom: 94px; */
 
     &--nopadding {
-        padding-bottom: 0;
+        padding-top: 0;
     }
 }
