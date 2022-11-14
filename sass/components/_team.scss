@@ -6,32 +6,31 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        width: 450px;
-
-        @media screen and (min-width: 768px) {
-            width: 768px;
-        }
+        width: 100%;
 
         @media screen and (min-width: 1200px) {
-            width: 1200px;
             flex-wrap: no-wrap;
         }
     }
 
     &__title {
-        /* margin-bottom: 50px; */
-
         margin-bottom: 30px;
 
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.17;
         letter-spacing: 0.03em;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+
+            font-size: 36px;
+        }
     }
 }
 
 .card {
-    width: 100%;
+    width: 450px;
 
     background-color: $white-color;
 
@@ -77,12 +76,4 @@
 
         color: $text-dark-color;
     }
-
-    /* &:not(:last-child) {
-        margin-bottom: 30px;
-    } */
-
-    /* &:not(:last-child) {
-        margin-right: 30px;
-    } */
 }

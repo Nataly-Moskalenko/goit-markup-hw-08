@@ -1,5 +1,5 @@
 .works {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         display: none;
     }
 
@@ -33,13 +33,14 @@
 
     &__list {
         display: flex;
+        gap: 30px
     }
 
     &__item {
         position: relative;
     }
 
-    &__item:not(:last-child) {
+    /* &__item:not(:last-child) {
         margin-right: 30px;
-    }
+    } */
 }

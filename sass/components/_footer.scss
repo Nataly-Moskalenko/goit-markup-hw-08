@@ -4,18 +4,51 @@
     background-color: $background-color-dark;
     text-align: center;
 
-    /* &__container {
-        display: flex;
-        align-items: baseline;
-    } */
+    &__container {
+        @media screen and (min-width: 768px) {
+            /* width: 768px; */
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            padding-left: 76px;
+            padding-right: 89px;
+        }
 
-    /* &__socials {
-        margin-left: 70px;
-    } */
+        @media screen and (min-width: 1200px) {
+            /* width: 1200px; */
+            flex-wrap: no-wrap;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
 
     &__socials,
     &__form {
         margin-top: 60px;
+    }
+
+    &__socials {
+        @media screen and (min-width: 768px) {
+            margin-left: auto;
+            margin-top: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 70px;
+        }
+    }
+
+    &__form {
+        @media screen and (min-width: 768px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-right: 0;
+            margin-top: 0;
+        }
     }
 
     &__text {
@@ -28,11 +61,6 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
     }
-
-    /* &__form {
-        display: flex;
-        margin-left: auto;
-    } */
 
     &__label {
         display: flex;
@@ -47,8 +75,6 @@
     }
 
     &__input {
-        /* width: 358px; */
-
         width: 450px;
         @include bordered(rgba(255, 255, 255, 0.3));
         border-radius: 4px;
@@ -57,18 +83,24 @@
         background-color: $background-color-dark;
         color: $text-light-color;
         font: inherit;
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
     }
 
     &__button {
         @extend %button;
 
-        /* align-self: flex-end; */
-        /* margin-left: 12px; */
-
         align-self: center;
         margin-top: 20px;
         padding-left: 28px;
         padding-right: 28px;
+
+        @media screen and (min-width: 1200px) {
+            align-self: flex-end;
+            margin-left: 12px;
+        }
     }
 }
 

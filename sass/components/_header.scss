@@ -65,12 +65,14 @@
         color: $text-dark-color;
 
         font-weight: 500;
-        /* font-size: 14px;
-        line-height: 1.14; */
-
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.02em;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.14;
+        }
 
         &:hover,
         &:focus {

@@ -1,6 +1,5 @@
 .hero {
     text-align: center;
-
     padding-top: 118px;
     padding-bottom: 118px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -28,12 +27,12 @@
 
         background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
             url("../images/hero.jpg");
+
     }
 
     &__title {
         width: 360px;
         margin: 0 auto 30px;
-        /* text-align: center; */
 
         color: $white-color;
 
@@ -43,16 +42,17 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
 
-        /* max-width: 696px;
-        font-size: 44px;
-        line-height: 1.36; */
+        @media screen and (min-width: 1200px) {
+            width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+        }
     }
 
     &__button {
         @extend %button;
         @include transitioned(background-color);
 
-        /* text-align: center; */
         padding: 10px 32px;
 
         &:hover,
