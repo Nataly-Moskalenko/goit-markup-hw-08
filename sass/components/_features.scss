@@ -1,5 +1,4 @@
 .features {
-
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -9,11 +8,20 @@
         @media screen and (min-width: 768px) {
             width: 768px;
         }
+
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+            flex-wrap: no-wrap;
+        }
     }
 
     &__item {
         @media screen and (min-width: 768px) {
             width: calc((100% - 30px) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 270px;
         }
     }
 
@@ -45,18 +53,13 @@
 
         margin-bottom: 30px;
         border-radius: 4%;
-        /* width: 270px; */
         width: 100%;
         height: 120px;
 
         background-color: $background-color-gray;
+
+        /* @media screen and (min-width: 1200px) {
+            width: 270px;
+        } */
     }
-
-    /* &__item:not(:last-child) {
-        margin-bottom: 30px;
-    } */
-
-    /* &__item:not(:last-child) {
-        margin-right: 30px;
-    } */
 }

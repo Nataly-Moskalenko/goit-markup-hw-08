@@ -1,11 +1,10 @@
 .nav {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
     display: flex;
     align-items: center;
-    visibility: hidden;
-
-    @media screen and (min-width: 768px) {
-        visibility: visible;
-    }
 
     &__link {
         font-weight: 500;
@@ -42,8 +41,11 @@
     &__list {
         display: flex;
         align-items: center;
-        /* margin-left: 93px; */
         margin-left: 87px;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
     }
 
     &__item:not(:first-child) {

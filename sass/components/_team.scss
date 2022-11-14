@@ -11,6 +11,11 @@
         @media screen and (min-width: 768px) {
             width: 768px;
         }
+
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+            flex-wrap: no-wrap;
+        }
     }
 
     &__title {
@@ -40,6 +45,9 @@
         width: calc((100% - 30px) / 2);
     }
 
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 
     &__image {
         width: 100%;

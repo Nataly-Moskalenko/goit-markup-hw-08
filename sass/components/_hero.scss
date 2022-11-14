@@ -21,9 +21,14 @@
             url("../images/tablet.jpg");
     }
 
-    /* padding-top: 200px;
-    padding-bottom: 200px;
-    width: 1600px; */
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 1600px;
+
+        background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
+            url("../images/hero.jpg");
+    }
 
     &__title {
         width: 360px;
