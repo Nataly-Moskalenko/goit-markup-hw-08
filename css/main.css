@@ -326,7 +326,7 @@ p {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    width: 1600px;
+    width: 100vw;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   }
@@ -394,6 +394,11 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
+}
 .features__text {
   color: #757575;
   font-size: 14px;
@@ -417,11 +422,6 @@ p {
   background-color: #f5f4fa;
 }
 
-.works {
-  /* &__item:not(:last-child) {
-      margin-right: 30px;
-  } */
-}
 @media screen and (max-width: 1199px) {
   .works {
     display: none;
@@ -521,9 +521,13 @@ p {
   width: 100%;
 }
 .card__description {
-  /* padding: 30px 32px; */
   padding-top: 30px;
   padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .card__description {
+    padding-bottom: 30px;
+  }
 }
 .card__title, .card__text {
   font-size: 16px;
@@ -587,13 +591,14 @@ p {
 .clients__title {
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
+    font-size: 36px;
     margin-bottom: 50px;
   }
 }
@@ -657,6 +662,9 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  /* text-align: center; */
+}
+.footer__container {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -681,6 +689,11 @@ p {
         flex-wrap: no-wrap;
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    text-align: start;
   }
 }
 .footer__socials, .footer__form {

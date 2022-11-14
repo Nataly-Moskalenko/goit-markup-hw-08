@@ -349,6 +349,9 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  /* text-align: center; */
+}
+.footer__container {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -373,6 +376,11 @@ p {
         flex-wrap: no-wrap;
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    text-align: start;
   }
 }
 .footer__socials, .footer__form {

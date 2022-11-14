@@ -23,11 +23,10 @@
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
-        width: 1600px;
+        width: 100vw;
 
         background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
             url("../images/hero.jpg");
-
     }
 
     &__title {
