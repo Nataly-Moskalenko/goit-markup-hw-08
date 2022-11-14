@@ -1,7 +1,21 @@
 .features {
-    /* &__list {
-        display: flex;       
-    } */
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 450px;
+
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    }
+
+    &__item {
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+        }
+    }
 
     &__title {
         text-align: center;
@@ -38,9 +52,9 @@
         background-color: $background-color-gray;
     }
 
-    &__item:not(:last-child) {
+    /* &__item:not(:last-child) {
         margin-bottom: 30px;
-    }
+    } */
 
     /* &__item:not(:last-child) {
         margin-right: 30px;

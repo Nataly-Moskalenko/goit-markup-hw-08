@@ -1,9 +1,10 @@
 .nav {
     display: flex;
     align-items: center;
+    visibility: hidden;
 
-    &--hidden {
-        @extend %visually-hidden;
+    @media screen and (min-width: 768px) {
+        visibility: visible;
     }
 
     &__link {
@@ -41,7 +42,8 @@
     &__list {
         display: flex;
         align-items: center;
-        margin-left: 93px;
+        /* margin-left: 93px; */
+        margin-left: 87px;
     }
 
     &__item:not(:first-child) {

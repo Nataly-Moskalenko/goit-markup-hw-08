@@ -15,6 +15,12 @@
     background-repeat: no-repeat;
     background-color: $hero-background-color;
 
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
+            url("../images/tablet.jpg");
+    }
+
     /* padding-top: 200px;
     padding-bottom: 200px;
     width: 1600px; */

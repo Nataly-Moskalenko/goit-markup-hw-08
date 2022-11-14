@@ -1,8 +1,5 @@
 .works {
-
-    &--hidden {
-        @extend %visually-hidden;
-    }
+    display: none;
 
     &__title {
         margin-bottom: 50px;
