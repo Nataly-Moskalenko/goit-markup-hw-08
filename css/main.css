@@ -383,6 +383,7 @@ p {
 @media screen and (min-width: 1200px) {
   .features__item {
     width: 270px;
+    /* width: calc((100% - 90px) / 4); */
   }
 }
 .features__title {
@@ -515,6 +516,7 @@ p {
 @media screen and (min-width: 1200px) {
   .card {
     width: 270px;
+    /* width: calc((100% - 90px) / 4); */
   }
 }
 .card__image {
