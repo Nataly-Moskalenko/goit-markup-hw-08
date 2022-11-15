@@ -1,0 +1,74 @@
+.menu {
+    &__button {
+        /* @include centeredFlex(inline-block); */
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: none;
+        margin-left: auto;
+
+        width: 40px;
+        height: 40px;
+
+        background-color: $white-color;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        &--open .menu__close {
+            display: block;
+        }
+
+        &--open .menu__open {
+            display: none;
+        }
+
+        /* &:hover .menu__close,
+        &:focus .menu__close {
+            fill: $accent-color;
+        } */
+    }
+
+    &__close {
+        display: none;
+        fill: $title-dark-color;
+    }
+
+    &__open {
+        fill: $black-color;
+    }
+
+    &__container {
+
+        @media screen and (max-width: 767px) {
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            height: 400px;
+            background-color: $white-color;
+
+            &--open {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+
+            margin-left: 87px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
+
+        &--open {
+            display: block;
+        }
+    }
+}
