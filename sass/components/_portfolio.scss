@@ -18,8 +18,7 @@
         }
 
         @media screen and (min-width: 1200px) {
-            flex-wrap: no-wrap;
-            justify-content: center;
+            width: 1200px;
             margin-bottom: 50px;
         }
     }
@@ -67,18 +66,13 @@
     &__projects {
         display: flex;
         flex-wrap: wrap;
-        /* flex-direction: column; */
         gap: 30px;
-        /* width: 450px; */
     }
 }
 
 .project {
     width: 450px;
-
-    /* flex-basis: calc((100% - 60px) / 3); */
     background-color: $white-color;
-    /* margin-bottom: 30px; */
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px) / 2);

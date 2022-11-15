@@ -1,10 +1,25 @@
 .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     @media screen and (max-width: 767px) {
-        display: none;
+        width: 100%;
     }
 
-    display: flex;
-    align-items: center;
+    &__list {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
+        display: flex;
+        align-items: center;
+        margin-left: 87px;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
+    }
 
     &__link {
         font-weight: 500;
@@ -38,17 +53,54 @@
         }
     }
 
-    &__list {
-        display: flex;
-        align-items: center;
-        margin-left: 87px;
+    &__item:not(:first-child) {
+        margin-left: 50px;
+    }
+}
 
-        @media screen and (min-width: 1200px) {
-            margin-left: 93px;
+.menu {
+    &__button {
+        /* @include centeredFlex(inline-block); */
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: none;
+
+        width: 40px;
+        height: 40px;
+
+        color: $black-color;
+        background-color: $white-color;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        &--open .menu__close {
+            display: block;
+        }
+
+        &--open .menu__open {
+            display: none;
         }
     }
 
-    &__item:not(:first-child) {
-        margin-left: 50px;
+    &__close {
+        display: none;
+    }
+
+    &__container {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        height: 400px;
+        background-color: aqua;
+
+        display: none;
+
+        &--open {
+            display: block;
+        }
     }
 }
