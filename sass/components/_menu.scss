@@ -1,7 +1,7 @@
 .menu {
     &__button {
-        z-index: 33;
-        /* @include centeredFlex(inline-block); */
+        z-index: 3;
+
         display: inline-block;
         margin: 0;
         padding: 0;
@@ -19,17 +19,21 @@
 
         &--open .menu__close {
             display: block;
-
+            /* fill: $title-dark-color; */
         }
 
         &--open .menu__open {
             display: none;
         }
 
-        /* &:hover .menu__close,
+        &:hover .menu__close,
         &:focus .menu__close {
             fill: $accent-color;
-        } */
+        }
+    }
+
+    &__icon {
+        align-self: center;
     }
 
     &__close {
@@ -42,6 +46,7 @@
     }
 
     &__container {
+        z-index: 2;
 
         @media screen and (max-width: 767px) {
             display: none;
@@ -49,8 +54,9 @@
             width: 100%;
             top: 0;
             left: 0;
-            height: 600px;
-            padding: 49px 40px;
+            height: 796px;
+            /* height: 100vh; */
+            padding: 48px 40px;
 
             background-color: $white-color;
 
@@ -61,7 +67,6 @@
 
         @media screen and (min-width: 768px) {
             display: flex;
-            /* justify-content: space-between; */
             align-items: center;
 
             margin-left: 87px;

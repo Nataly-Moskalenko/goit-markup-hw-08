@@ -3,16 +3,14 @@
     /* justify-content: space-between; */
     align-items: center;
 
-    @media screen and (max-width: 767px) {
-        /* width: 100%; */
-        /* justify-content: space-between; */
-    }
-
     &__list {
+        margin-bottom: 302px;
+
         @media screen and (min-width: 768px) {
             display: flex;
             align-items: center;
             margin-right: 90px;
+            margin-bottom: 0;
         }
 
         @media screen and (min-width: 1200px) {
