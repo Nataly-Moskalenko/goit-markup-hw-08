@@ -1,5 +1,6 @@
 .menu {
     &__button {
+        z-index: 33;
         /* @include centeredFlex(inline-block); */
         display: inline-block;
         margin: 0;
@@ -18,6 +19,7 @@
 
         &--open .menu__close {
             display: block;
+
         }
 
         &--open .menu__open {
@@ -45,9 +47,11 @@
             display: none;
             position: absolute;
             width: 100%;
-            top: 100%;
+            top: 0;
             left: 0;
-            height: 400px;
+            height: 600px;
+            padding: 49px 40px;
+
             background-color: $white-color;
 
             &--open {
