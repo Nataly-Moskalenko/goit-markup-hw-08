@@ -19,7 +19,7 @@
 
         &--open .menu__close {
             display: block;
-            /* fill: $title-dark-color; */
+            fill: $title-dark-color;
         }
 
         &--open .menu__open {
@@ -38,7 +38,7 @@
 
     &__close {
         display: none;
-        fill: $title-dark-color;
+        /* fill: $title-dark-color; */
     }
 
     &__open {
@@ -48,24 +48,28 @@
     &__container {
         z-index: 2;
 
-        @media screen and (max-width: 767px) {
-            display: none;
-            position: absolute;
-            width: 100%;
-            top: 0;
-            left: 0;
-            height: 796px;
-            /* height: 100vh; */
-            padding: 48px 40px;
+        /* @media screen and (max-width: 767px) { */
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 796px;
+        /* height: 100vh; */
+        padding: 48px 40px;
 
-            background-color: $white-color;
+        background-color: $white-color;
 
-            &--open {
-                display: block;
-            }
+        &--open {
+            display: block;
         }
 
+        /* } */
+
         @media screen and (min-width: 768px) {
+            position: relative;
+            padding: 0;
+            height: 80px;
             display: flex;
             align-items: center;
 
@@ -76,8 +80,8 @@
             margin-left: 93px;
         }
 
-        &--open {
+        /* &--open {
             display: block;
-        }
+        } */
     }
 }
