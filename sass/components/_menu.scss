@@ -38,7 +38,6 @@
 
     &__close {
         display: none;
-        /* fill: $title-dark-color; */
     }
 
     &__open {
@@ -47,24 +46,20 @@
 
     &__container {
         z-index: 2;
-
-        /* @media screen and (max-width: 767px) { */
         display: none;
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        height: 796px;
-        /* height: 100vh; */
-        padding: 48px 40px;
-
-        background-color: $white-color;
 
         &--open {
             display: block;
-        }
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            /* height: 796px; */
+            height: 776px;
+            padding: 48px 40px;
 
-        /* } */
+            background-color: $white-color;
+        }
 
         @media screen and (min-width: 768px) {
             position: relative;
@@ -79,9 +74,5 @@
         @media screen and (min-width: 1200px) {
             margin-left: 93px;
         }
-
-        /* &--open {
-            display: block;
-        } */
     }
 }
