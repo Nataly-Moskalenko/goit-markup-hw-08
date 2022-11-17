@@ -239,6 +239,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* width: 357px; */
   margin-top: 64px;
 }
 @media screen and (min-width: 768px) {
@@ -308,7 +309,7 @@ p {
   top: 0;
   left: 0;
   /* height: 796px; */
-  padding: 48px 40px;
+  padding: 48px 20px;
   background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
@@ -991,9 +992,9 @@ p {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 40px;
+  padding: 20px;
   /* width: 450px; */
-  width: 410px;
+  width: 420px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;

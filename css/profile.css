@@ -239,6 +239,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* width: 357px; */
   margin-top: 64px;
 }
 @media screen and (min-width: 768px) {
@@ -405,7 +406,7 @@ p {
   top: 0;
   left: 0;
   /* height: 796px; */
-  padding: 48px 40px;
+  padding: 48px 20px;
   background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
