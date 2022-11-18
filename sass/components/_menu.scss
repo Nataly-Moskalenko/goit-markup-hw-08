@@ -54,24 +54,28 @@
             width: 100%;
             top: 0;
             left: 0;
-            /* height: 796px; */
-            padding: 48px 20px;
+            padding: 48px 40px;
 
             background-color: $white-color;
         }
 
-        @media screen and (min-width: 768px) {
-            position: relative;
-            padding: 0;
-            height: 80px;
-            display: flex;
-            align-items: center;
-
-            margin-left: 87px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            margin-left: 93px;
+        @media screen and (max-width: 479px) {
+            width: 100vw;
         }
     }
+
+    @media screen and (min-width: 768px) {
+        position: relative;
+        padding: 0;
+        height: 80px;
+        display: flex;
+        align-items: center;
+
+        margin-left: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+}
 }
