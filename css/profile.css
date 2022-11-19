@@ -37,6 +37,7 @@ body.modal-open {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -116,17 +117,10 @@ p {
 }
 .header__container {
   position: relative;
-  /* justify-content: space-between; */
   padding: 10px 15px;
-  /* @media screen and (min-width: 1200px) {
-      padding: 24px 15px;
-  } */
 }
 @media screen and (min-width: 768px) {
   .header__container {
-    /* display: flex;
-    align-items: center; */
-    /* padding: 16px 15px; */
     padding: 0 15px;
   }
 }
@@ -176,22 +170,18 @@ p {
   }
 }
 .header-contacts__smartphone {
-  /* @media screen and (max-width: 767px) { */
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
-  /* } */
 }
 .header-contacts__envelope {
-  /* @media screen and (max-width: 767px) { */
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
-  /* } */
 }
 @media screen and (min-width: 768px) {
   .header-contacts__link {
@@ -239,7 +229,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* width: 357px; */
   margin-top: 64px;
 }
 @media screen and (min-width: 768px) {
@@ -402,12 +391,17 @@ p {
 .menu__container--open {
   display: block;
   position: absolute;
-  width: 100%;
+  /* width: 100%; */
+  width: 480px;
   top: 0;
   left: 0;
-  /* height: 796px; */
-  padding: 48px 20px;
+  padding: 48px 40px;
   background-color: #ffffff;
+}
+@media screen and (max-width: 479px) {
+  .menu__container {
+    width: 100vw;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu__container {

@@ -51,7 +51,8 @@
         &--open {
             display: block;
             position: absolute;
-            width: 100%;
+            /* width: 100%; */
+            width: 480px;
             top: 0;
             left: 0;
             padding: 48px 40px;
@@ -62,20 +63,19 @@
         @media screen and (max-width: 479px) {
             width: 100vw;
         }
-    }
 
-    @media screen and (min-width: 768px) {
-        position: relative;
-        padding: 0;
-        height: 80px;
-        display: flex;
-        align-items: center;
+        @media screen and (min-width: 768px) {
+            position: relative;
+            padding: 0;
+            height: 80px;
+            display: flex;
+            align-items: center;
 
-        margin-left: 87px;
-    }
+            margin-left: 87px;
+        }
 
-    @media screen and (min-width: 1200px) {
-        margin-left: 93px;
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+        }
     }
-}
 }
