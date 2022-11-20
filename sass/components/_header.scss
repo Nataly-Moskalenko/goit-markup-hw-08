@@ -83,11 +83,13 @@
 
         &:hover,
         &:focus {
-            color: $accent-color;
+            @media screen and (min-width: 768px) {
+                color: $accent-color;
+            }
         }
 
-        &:hover .header-list__icon,
-        &:focus .header-list__icon {
+        &:hover .header-contacts__icon,
+        &:focus .header-contacts__icon {
             fill: $accent-color;
         }
     }

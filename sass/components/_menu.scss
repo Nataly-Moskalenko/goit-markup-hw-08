@@ -20,14 +20,14 @@
         &--open .menu__close {
             display: block;
             fill: $title-dark-color;
+            @include transitioned(fill);
         }
 
         &--open .menu__open {
             display: none;
         }
 
-        &:hover .menu__close,
-        &:focus .menu__close {
+        &:hover .menu__close {
             fill: $accent-color;
         }
     }
