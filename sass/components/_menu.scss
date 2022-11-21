@@ -13,7 +13,7 @@
 
         background-color: $white-color;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             display: none;
         }
 
@@ -51,8 +51,7 @@
         &--open {
             display: block;
             position: absolute;
-            /* width: 100%; */
-            width: 480px;
+            width: $mobile;
             top: 0;
             left: 0;
             padding: 48px 40px;
@@ -64,7 +63,7 @@
             width: 100vw;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             position: relative;
             padding: 0;
             height: 80px;
@@ -74,7 +73,7 @@
             margin-left: 87px;
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             margin-left: 93px;
         }
     }

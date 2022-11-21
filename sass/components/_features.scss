@@ -5,7 +5,7 @@
         gap: 30px;
         width: 100%;
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             flex-wrap: no-wrap;
         }
     }
@@ -13,11 +13,11 @@
     &__item {
         width: 450px;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             width: calc((100% - 30px) / 2);
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             width: 270px;
             /* width: calc((100% - 90px) / 4); */
         }
@@ -33,7 +33,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             text-align: start;
         }
     }

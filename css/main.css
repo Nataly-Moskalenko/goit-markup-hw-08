@@ -298,7 +298,6 @@ p {
 .menu__container--open {
   display: block;
   position: absolute;
-  /* width: 100%; */
   width: 480px;
   top: 0;
   left: 0;
@@ -831,14 +830,12 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  /* text-align: center; */
 }
 .footer__container {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .footer__container {
-    /* width: 768px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -853,7 +850,6 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    /* width: 1200px; */
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap;
     padding-left: 15px;

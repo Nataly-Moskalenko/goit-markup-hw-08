@@ -2,13 +2,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $background-color-dark;
-    /* text-align: center; */
 
     &__container {
         text-align: center;
 
-        @media screen and (min-width: 768px) {
-            /* width: 768px; */
+        @media screen and (min-width: $tablet) {
             display: flex;
             flex-wrap: wrap;
             align-items: baseline;
@@ -16,8 +14,7 @@
             padding-right: 89px;
         }
 
-        @media screen and (min-width: 1200px) {
-            /* width: 1200px; */
+        @media screen and (min-width: $desktop) {
             flex-wrap: no-wrap;
             padding-left: 15px;
             padding-right: 15px;
@@ -25,7 +22,7 @@
     }
 
     &__contacts {
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             text-align: start;
         }
     }
@@ -36,23 +33,23 @@
     }
 
     &__socials {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             margin-left: auto;
             margin-top: 0;
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             margin-left: 70px;
         }
     }
 
     &__form {
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: $tablet) {
             margin-left: auto;
             margin-right: auto;
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             display: flex;
             margin-right: 0;
             margin-top: 0;
@@ -96,7 +93,7 @@
             width: 100%;
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             width: 358px;
         }
     }
@@ -109,7 +106,7 @@
         padding-left: 28px;
         padding-right: 28px;
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: $desktop) {
             align-self: flex-end;
             margin-left: 12px;
         }
