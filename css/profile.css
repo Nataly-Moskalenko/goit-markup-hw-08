@@ -64,6 +64,10 @@ p {
   padding-top: 0;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .portfolio__title--hidden {
   position: absolute;
   white-space: nowrap;
